@@ -1,0 +1,16 @@
+{
+    "name": "threejs-3d-scene",
+    "version": "1.0.0",
+    "description": "Three.js Fullscreen 3D Scene with multiple input methods",
+    "main": "index.html",
+    "scripts": {
+        "start": "live-server --port=5500 --open=/index.html",
+        "dev": "live-server --port=5500 --open=/index.html --watch"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    },
+    "keywords": ["three.js", "3d", "webgl", "interactive"],
+    "author": "",
+    "license": "MIT"
+} 

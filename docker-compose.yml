@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  threejs-ambient-occlusion:
+    build: .
+    ports:
+      - "8080:80"
+    container_name: fx-lessons-ambient-occlusion
+    restart: unless-stopped
+    volumes:
+      - ./fx_lessons/ambient_occlusion:/usr/share/nginx/html/fx_lessons/ambient_occlusion
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80 

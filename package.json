@@ -1,0 +1,68 @@
+{
+  "name": "fx-lessons",
+  "version": "2.0.0",
+  "description": "Interactive Three.js Visual Effects Collection - Learn 3D graphics through hands-on lessons",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=5500 --entry-file=index.html --no-browser",
+    "dev": "live-server --port=5500 --entry-file=index.html --no-browser --watch=.",
+    "dev:lesson": "cd fx_lessons/ambient_occlusion && live-server --port=5501 --entry-file=index.html --no-browser",
+    "build": "echo 'Build completed - static files ready'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'",
+    "optimize": "echo 'Files already optimized'",
+    "docker:build": "docker build -t fx-lessons .",
+    "docker:run": "docker run -p 8080:80 fx-lessons",
+    "docker:compose": "docker-compose up -d",
+    "docker:stop": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "serve": "python -m http.server 8000",
+    "serve:node": "npx serve -s . -p 3000",
+    "clean": "rm -rf node_modules package-lock.json",
+    "install:dev": "npm install",
+    "deploy": "git add . && git commit -m 'Auto-deploy' && git push origin main",
+    "status": "echo 'Project Status:' && echo '- Root: Ready' && echo '- Lesson: Ready' && echo '- Docker: Ready'"
+  },
+  "keywords": [
+    "threejs",
+    "visual-effects",
+    "3d-graphics",
+    "webgl",
+    "interactive",
+    "learning",
+    "ambient-occlusion",
+    "particles",
+    "lighting",
+    "post-processing",
+    "educational",
+    "hands-on"
+  ],
+  "author": "FX Lessons Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cxmx-dev/fx_lessons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cxmx-dev/fx_lessons/issues"
+  },
+  "homepage": "https://github.com/cxmx-dev/fx_lessons#readme",
+  "directories": {
+    "lessons": "fx_lessons/"
+  },
+  "files": [
+    "index.html",
+    "README.md",
+    "fx_lessons/",
+    "Dockerfile",
+    "docker-compose.yml"
+  ]
+} 

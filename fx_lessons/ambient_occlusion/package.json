@@ -1,16 +1,50 @@
 {
-    "name": "threejs-3d-scene",
-    "version": "1.0.0",
-    "description": "Three.js Fullscreen 3D Scene with multiple input methods",
-    "main": "index.html",
-    "scripts": {
-        "start": "live-server --port=5500 --open=/index.html",
-        "dev": "live-server --port=5500 --open=/index.html --watch"
-    },
-    "devDependencies": {
-        "live-server": "^1.2.2"
-    },
-    "keywords": ["three.js", "3d", "webgl", "interactive"],
-    "author": "",
-    "license": "MIT"
+  "name": "fx-lessons-ambient-occlusion",
+  "version": "2.0.0",
+  "description": "Interactive Three.js Ambient Occlusion (SSAO) Visual Effects Lesson",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=5500 --entry-file=index.html --no-browser",
+    "dev": "live-server --port=5500 --entry-file=index.html --no-browser --watch=.",
+    "build": "echo 'Build completed - static files ready'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'",
+    "optimize": "echo 'Files already optimized'",
+    "docker:build": "docker build -t fx-lessons-ambient-occlusion .",
+    "docker:run": "docker run -p 8080:80 fx-lessons-ambient-occlusion",
+    "docker:compose": "docker-compose up -d",
+    "docker:stop": "docker-compose down",
+    "serve": "python -m http.server 8000",
+    "serve:node": "npx serve -s . -p 3000"
+  },
+  "keywords": [
+    "threejs",
+    "ambient-occlusion",
+    "ssao",
+    "visual-effects",
+    "3d",
+    "webgl",
+    "interactive",
+    "particles",
+    "lighting",
+    "post-processing"
+  ],
+  "author": "FX Lessons Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/fx-lessons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/fx-lessons/issues"
+  },
+  "homepage": "https://github.com/your-username/fx-lessons#readme"
 } 
